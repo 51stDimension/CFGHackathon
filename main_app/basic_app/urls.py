@@ -9,4 +9,5 @@ urlpatterns = [
     path('signup/',views.signup,name="create_user"),
     path('logout/',views.user_logout,name="logout"),
     path('dashboard/',views.dashboardView.as_view(),name="dashboard"),
+    path('contactus/',views.contactUSView.as_view(),name="contactus"),
 ]
