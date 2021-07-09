@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
+{% load pwa %}
+{% progressive_web_app_meta %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,36 +32,11 @@
           {% endif %}
         </ul>
     </header>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-3">Fluid jumbo heading</h1>
-        <p class="lead">Jumbo helper text</p>
-        <hr class="my-2">
-        <p>More info</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-        </p>
-      </div>
-    </div>
 
       {% block content %}
 
       {% endblock %}
 
-      <section class="bg-shd" id="contacts">
-        <div class="box">
-          <h2>Subscribe</h2>
-          <form class="sub-form">
-            <label for="user">
-              <input id="user" type="text" placeholder="Name"/>
-            </label>
-            <label for="email">
-              <input id="email" type="email" placeholder="Email"/>
-            </label>
-            <button class="sm" type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
       <footer>
         <div class="box">
           <ul class="nav">
