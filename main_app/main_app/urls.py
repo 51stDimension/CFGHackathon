@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Landingview.as_view(),name="landing"),
     path('basic_app/',include('basic_app.urls')),
+    path('',include('pwa.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
