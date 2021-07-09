@@ -8,6 +8,7 @@ event.waitUntil(
     'basic_app/signup/',
     'basic_app/dashboard/',
     'basic_app/login/',
+    '/static/img/frame.png',
   ]);
   })
 );

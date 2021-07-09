@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from basic_app.models import UserModel
 from pathlib import Path
+from basic_app import chatbot as cb
 # Create your views here.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -93,3 +94,10 @@ def user_login(request):
             return HttpResponse("invalid login details supplied!")
     else:
         return render(request,'login.html')
+
+def UpdateChat(request):
+    # if request.method == "POST":
+    query =request.GET.get('msgbox',None)
+    response = cb.get_response(query)
+
+    return JsonResponse({'response': response, 'query': query})

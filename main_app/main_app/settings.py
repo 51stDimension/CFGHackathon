@@ -29,8 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-PWA_APP_NAME = 'geeksforgeeks'
-PWA_APP_DESCRIPTION = "GeeksForGeeks PWA"
+PWA_APP_NAME = 'NGO_Name'
+PWA_APP_DESCRIPTION = "NGO PWA"
 PWA_APP_THEME_COLOR = '#000000'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
 PWA_APP_DISPLAY = 'standalone'
@@ -40,14 +40,14 @@ PWA_APP_START_URL = '/'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
   {
-    'src': 'static/img/logo.png',
-    'sizes': '160x160'
+    'src': 'static/img/frame.png',
+    'sizes': '512x512'
   }
 ]
 PWA_APP_ICONS_APPLE = [
   {
-    'src': 'static/img/logo.png',
-    'sizes': '160x160'
+    'src': 'static/img/frame.png',
+    'sizes': '512x512'
   }
 ]
 PWA_APP_SPLASH_SCREEN = [
