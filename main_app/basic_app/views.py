@@ -15,6 +15,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 class dashboardView(TemplateView):
     template_name = "dashboard.html"
 
+class contactUSView(TemplateView):
+    template_name = "contactus.html"
+
+
 class Landingview(TemplateView):
     template_name = "landing.html"
 

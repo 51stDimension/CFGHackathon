@@ -21,7 +21,7 @@
           <li><a href="#">Get Started</a></li>
           <li><a href="#">Discover</a></li>
           <li><a href="#">Manual</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="{% url "basic_app:contactus" %}">Contact Us</a></li>
           <li><a href="{% url "basic_app:dashboard" %}">View Dashboard</a></li>
           {% if user.is_authenticated %}
               <li><a href="#">Hello, {{user.username}}</a></li>
