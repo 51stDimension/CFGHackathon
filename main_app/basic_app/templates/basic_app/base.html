@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
+{% load pwa %}
+{% progressive_web_app_meta %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,6 +32,8 @@
           {% endif %}
         </ul>
     </header>
+
+
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-3">Fluid jumbo heading</h1>
@@ -60,6 +64,7 @@
           </form>
         </div>
       </section>
+
       <footer>
         <div class="box">
           <ul class="nav">
